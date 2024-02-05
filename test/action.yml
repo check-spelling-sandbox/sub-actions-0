@@ -3,8 +3,6 @@ description: 'sub action'
 author: 'jsoref'
 branding:
   color: 'pink'
-inputs:
-outputs:
 
 runs:
   using: composite
