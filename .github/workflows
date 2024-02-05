@@ -1,0 +1,12 @@
+on: push
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+        - name: checkout
+          uses: actions/checkout@v4
+        - name: test local
+          uses: ./test
+        - name: test public
+          uses: check-spelling-sandbox/sub-actions-0/test@HEAD
